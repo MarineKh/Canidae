@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="content/css/canidae.css" />
+        <link rel="shortcut icon" type="image/png" href="content/imgs/animal.png" />
+
+        <script src="scripts/jQuery/jquery-3.1.1.min.js"></script>
+        <script src="scripts/canidae.js" async="async"></script>
+
+
+    </head>
+    <body>
+        <!--<main>-->
+            <div class="content">
+                <table>
+                    <caption>Table 1.1</caption>
+                    <thead>
+                        <tr>
+                            <th title="Description List">Description List</th>
+                            <th title="Contents">Contents</th>
+                            <th title="Count">Count</th>
+                            <th title="1" class="pointer" data-id="1">1</th>
+                            <th title="2" class="pointer" data-id="2">2</th>
+                            <th title="3" class="pointer" data-id="3">3</th>
+                            <th>
+                                <input class="pointer ckeckbox" type="checkbox" title="Extinct" id="topCkeckbox"/>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr id="tr1">
+                            <td>
+                                <dl>
+                                    <dt class="dog" title="Dog">Dog</dt>
+                                    <dd>A carnivorous mammal of the family Canidae.</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <input type="range" class="range range1" value="0" min="0" max="100" step=".05" onmousemove="this.title=this.value;" />
+                            </td>
+                            <td>
+                                <input type="button" class="dec" value="-" />
+                                <input id="text1" type="text" class="inputText" value="0" readonly="readonly"/>
+                                <input type="button" class="inc" value="+" />
+                            </td>
+                            <td>
+                                <input name="answer1" type="radio" class="radio1" checked="checked"/>
+                            </td>
+                            <td>
+                                <input name="answer1" type="radio" class="radio2"/>
+                            </td>
+                            <td>
+                                <input name="answer1" type="radio" class="radio3"/>
+                            </td>
+                            <td>
+                                <input type="checkbox" class="clear clear4"/>
+                                <label></label>
+                            </td>
+                        </tr>
+                        <tr id="tr2">
+                            <td>
+                                <dl>
+                                    <dt class="jackal" title="Jackal">Jackal</dt>
+                                    <dd>A carnivorous mammal of the family Canidae.</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <input type="range" class="range range2" value="0.1" min="0.1" max="10" step=".005" onmousemove="this.title=this.value;" />
+                            </td>
+                            <td>
+                                <input type="button" class="dec" value="-" />
+                                <input id="text" type="text" class="inputText" value="0" readonly="readonly"/>
+                                <input type="button" class="inc"  value="+" />
+                            </td>
+                            <td>
+                                <input name="answer2" type="radio" class="radio1" checked="checked"/>
+                            </td>
+                            <td>
+                                <input name="answer2" type="radio" class="radio2"/>
+                            </td>
+                            <td>
+                                <input name="answer2" type="radio" class="radio3"/>
+                            </td>
+                            <td>
+                                <input type="checkbox" class="clear clear4"/>
+                                <label></label>
+                            </td>
+                        </tr>
+                        <tr id="tr3">
+                            <td>
+                                <dl>
+                                    <dt class="wolf" title="Wolf">Wolf</dt>
+                                    <dd>A carnivorous mammal of the family Canidae.</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <input type="range" class="range range3" value="0" min="0" max="100" step=".05" onmousemove="this.title=this.value;" />
+                            </td>
+                            <td>
+                                <input type="button" class="dec" value="-" />
+                                <input type="text" class="inputText" value="0" readonly="readonly"/>
+                                <input type="button" class="inc" value="+" />
+                            </td>
+                            <td>
+                                <input name="answer3" type="radio" class="radio1" checked="checked"/>
+                            </td>
+                            <td>
+                                <input name="answer3" type="radio" class="radio2"/>
+                            </td>
+                            <td>
+                                <input name="answer3" type="radio" class="radio3"/>
+                            </td>
+                            <td>
+                                <input type="checkbox" class="clear clear4"/>
+                                <label></label>
+                            </td>
+                        </tr>
+                        <tr id="tr4">
+                            <td>
+                                <dl>
+                                    <dt class="vixen" title="Vixen">Vixen</dt>
+                                    <dd>A carnivorous mammal of the family Canidae.</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <input type="range" class="range range4" value="0" min="0" max="900" step=".005" onmousemove="this.title=this.value;" />
+                            </td>
+                            <td>
+                                <input type="button" class="dec" value="-" />
+                                <input type="text" class="inputText" value="0" readonly="readonly"/>
+                                <input type="button" class="inc" value="+" />
+                            </td>
+                            <td>
+                                <input name="answer4" type="radio" class="radio1" checked="checked"/>
+                            </td>
+                            <td>
+                                <input name="answer4" type="radio" class="radio2"/>
+                            </td>
+                            <td>
+                                <input name="answer4" type="radio" class="radio3"/>
+                            </td>
+                            <td>
+                                <input type="checkbox" class="clear clear4"/>
+                                <label></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td title="SUM">SUM</td>
+                            <td>
+                                <meter id="meter" class="meter" value="0" min="0" max="100"></meter>
+                            </td>
+                            <td>
+                                <progress id="progress" value="48" max="96"></progress>
+                            </td>
+                            <td>
+                                <div id="price" class="price">0</div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        <!--</main>-->
+    </body>
+</html>
